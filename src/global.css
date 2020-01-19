@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+:root {
+  /* 1rem === 10px, but remain responsive to user font size settings */
+  font-size: 62.5%;
+
+  --navbar-height: 8rem;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* default font size is 16px */
+  font-size: 1.6rem;
+  background-color: #efefef;
+  margin: 0;
+}
