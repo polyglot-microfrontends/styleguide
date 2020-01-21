@@ -4,7 +4,7 @@
   /* 1rem === 10px, but remain responsive to user font size settings */
   font-size: 62.5%;
 
-  --navbar-height: 8rem;
+  --navbar-height: 6rem;
 }
 
 body {
@@ -13,4 +13,8 @@ body {
   font-size: 1.6rem;
   background-color: #efefef;
   margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
