@@ -1,4 +1,4 @@
-const webpackMerge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 const singleSpaDefaults = require("webpack-config-single-spa");
 
 module.exports = webpackConfigEnv => {
@@ -8,15 +8,7 @@ module.exports = webpackConfigEnv => {
     webpackConfigEnv
   });
 
-  return webpackMerge.smart(defaultConfig, {
+  return merge(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
-    module: {
-      rules: [
-        {
-          test: /\.css/,
-          use: ["style-loader", "css-loader"]
-        }
-      ]
-    }
   });
 };
